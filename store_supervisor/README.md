@@ -1,0 +1,4 @@
+# StoreSupervisor
+
+**TODO: Add description**
+
