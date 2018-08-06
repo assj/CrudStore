@@ -121,12 +121,12 @@ defmodule Store.ProductControllerTest do
   end
 
   test "checks if the report was requested successfully", %{conn: conn, valid_attrs: valid_attrs} do
-    {:ok, product} = Product.insert_product(valid_attrs)
+    {:ok, _} = Product.insert_product(valid_attrs)
     conn = get(conn, product_path(conn, :report))
     assert redirected_to(conn) == product_path(conn, :index)
   end
 
-  test "checks if the report file was correctly created", %{conn: conn, valid_attrs: valid_attrs} do
+  test "checks if the report file was correctly created", %{valid_attrs: valid_attrs} do
     {:ok, product} = Product.insert_product(valid_attrs)
     report_file_path = Report.create()
 

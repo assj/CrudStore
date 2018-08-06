@@ -51,7 +51,8 @@ defmodule Store.Mixfile do
       {:csv, "~> 2.0.0"},
       {:exq, "~> 0.12.1"},
       {:exq_ui, "~> 0.9.0"},
-      {:httpoison, "~> 1.0"}
+      {:httpoison, "~> 1.0"},
+      {:mock, "~> 0.3.0", only: :test}
     ]
   end
 

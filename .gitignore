@@ -8,3 +8,7 @@ erl_crash.dump
 *.beam
 /config/*.secret.exs
 
+
+store_supervisor/apps/store/lib/crud_store/reports/
+
+store_supervisor/apps/store_mailer/web/controllers/reports/
