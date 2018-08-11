@@ -1,2 +1,2 @@
 # CrudStore
-Simple store application to learn Elixir
+Simple store supervisor application to learn Elixir
